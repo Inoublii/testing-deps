@@ -1,0 +1,21 @@
+@import "../../../styles/variables.module";
+
+.detailCardContainer {
+  max-width: 25rem;
+  h4:nth-child(1) {
+    color: orange;
+    font-size: 32px;
+    font-family: $font-family-monument;
+  }
+  h4:nth-child(2) {
+    color: $dark-violet;
+    font-size: 32px;
+    font-family: $font-family-monument;
+    margin-top: -3rem;
+  }
+  p:nth-child(3) {
+    color: $dark-violet;
+    font-family: $font-family-gotham;
+    margin-top: -2rem;
+  }
+}

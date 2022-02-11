@@ -1,0 +1,57 @@
+@import "../../styles/variables.module";
+
+.section2div {
+  background-image: url("../../public/assets/images/2/bg.png");
+  background-color: red;
+  text-align: center;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  padding-top: 7rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  .textSection {
+    text-align: left;
+    width: 37rem;
+    .title {
+      color: $aqua;
+      font-family: $font-family-monument;
+      font-weight: $font-weight-light;
+      font-size: $font-size-head;
+    }
+    .text {
+      font-family: $font-family-gotham;
+      font-size: $font-size-base;
+    }
+  }
+  .imgSection {
+    .neoLogo {
+      position: absolute;
+      top: 1rem;
+      right: 15rem;
+      width: 39%;
+    }
+    .fnakImg {
+      display: flex;
+      justify-content: center;
+      z-index: 2;
+    }
+  }
+
+  .desertImg {
+    position: absolute !important;
+    top: 26.85rem;
+
+    span {
+      width: 147% !important;
+      max-width: 132.1% !important;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../../../styles/variables.module";
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  hr {
+    border-top: 1px solid red;
+  }
+  .card {
+    .bgImg {
+      z-index: 0;
+      width: 150px;
+    }
+    .fnakImg {
+      visibility: hidden;
+      position: relative;
+      left: 1.5rem;
+      width: 6rem;
+      bottom: 10rem;
+      z-index: 3;
+    }
+    &:hover {
+      margin-left: 3rem;
+      margin-right: 3rem;
+
+      .bgImg {
+        content: url("../../../../public/assets/svg/loz1.svg");
+      }
+      .fnakImg {
+        visibility: visible;
+      }
+    }
+  }
+}
+.cardsContainer {
+  &::before {
+    bottom: -50px;
+    background-color: red;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: red;
+  }
+}
+
+.detailCardContainer {
+  max-width: 25rem;
+  margin-top: -6rem;
+  h4:nth-child(1) {
+    color: orange;
+    font-size: 32px;
+    font-family: $font-family-monument;
+  }
+  h4:nth-child(2) {
+    color: $dark-violet;
+    font-size: 32px;
+    font-family: $font-family-monument;
+    margin-top: -3rem;
+  }
+  p:nth-child(3) {
+    color: $dark-violet;
+    font-family: $font-family-gotham;
+    margin-top: -2rem;
+  }
+}

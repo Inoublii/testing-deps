@@ -1,0 +1,24 @@
+@import "../../styles/variables.module";
+
+.highlightContainer {
+  padding-right: 15rem;
+  padding-left: 15rem;
+  .titleSection {
+    text-align: center;
+    color: $dark-violet;
+
+    h1 {
+      font-size: 100px;
+      font-family: $font-family-zuume-cut;
+    }
+    h2 {
+      margin-top: 5rem;
+      font-family: $font-family-gotham;
+      font-size: $font-size-text;
+      font-weight: $font-weight-bold;
+      padding-right: 25rem;
+      padding-left: 25rem;
+      margin-bottom: 5rem;
+    }
+  }
+}

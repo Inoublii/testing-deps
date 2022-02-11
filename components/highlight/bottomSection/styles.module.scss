@@ -1,0 +1,47 @@
+@import "../../../styles/variables.module";
+
+.BottomSectionContainer {
+  display: flex;
+  justify-content: center;
+  .BottomCard {
+    width: 380px;
+    position: relative;
+    margin: 1rem;
+    &:before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      transform: rotate(45deg);
+      position: absolute;
+      z-index: 1;
+      top: -24px;
+      left: -25px;
+    }
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      transform: rotate(45deg);
+      position: absolute;
+      z-index: 1;
+      right: -24px;
+      bottom: -21px;
+    }
+    .BottomCardHead {
+      position: relative;
+      background-color: #1e123e;
+      padding: 25px 38px 0 38px;
+      color: white;
+      h3 {
+        font-family: $font-family-monument;
+        font-weight: 300;
+        color: $aqua;
+      }
+      p {
+        font-family: $font-family-gotham;
+      }
+    }
+  }
+}

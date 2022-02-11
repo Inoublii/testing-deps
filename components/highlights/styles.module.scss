@@ -1,0 +1,51 @@
+.highfnaks {
+  background-image: url("../../public/assets/images/3/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  position: relative;
+  padding-right: 9rem;
+  padding-left: 9rem;
+  padding-top: 7rem;
+  margin: auto;
+  height: auto;
+  min-height: 700px;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sky {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sky .planet1 {
+  position: absolute;
+  top: 165px;
+  left: 28%;
+}
+
+.sky .ship {
+ z-index: 1;
+ position: absolute;
+ top: -30px;
+}
+
+.sky .planet2 {
+  position: absolute;
+  right: 24%;
+  top: 50px;
+}
+
+.fnakslist {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}

@@ -1,0 +1,70 @@
+@import "../../../styles/variables.module";
+
+.roadMapCardList {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .CardHeadTitle {
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+
+    .horizontalLine {
+      position: absolute;
+      display: flex;
+      right: 64.4rem;
+      width: 50px;
+      height: 1rem;
+      margin-top: 7rem;
+    }
+    .title {
+      font-weight: $font-weight-light;
+      font-family: $font-family-monument;
+      color: $aqua;
+      text-align: right;
+      margin-right: 3rem;
+      .titleBleuNumber {
+        font-size: $font-size-road-map-bleu-title;
+      }
+      .titleBleuText {
+        font-size: $font-size-head;
+      }
+      .subTitlePhaseNumber {
+        font-family: $font-family-zuume-cut;
+        font-size: $font-size-head;
+        color: $white;
+      }
+      .subTitleText {
+        font-family: $font-family-zuume-cut;
+        font-size: $font-size-phase-title-text;
+        color: $white;
+      }
+    }
+  }
+  .CardBody {
+    color: white;
+    max-width: 50%;
+    ul {
+      li {
+        margin-left: 1rem;
+        .phaseActionText {
+          text-align: left;
+          font-size: $font-size-base;
+          font-family: $font-family-monument;
+          font-weight: $font-weight-light;
+        }
+        .ImagHolder {
+          display: flex;
+          position: relative;
+          right: 2rem;
+          top: -1rem;
+        }
+        .smallText {
+          max-width: 330px;
+          text-align: left;
+          font-family: $font-family-gotham;
+          font-size: $font-size-smaller;
+          font-weight: $font-weight-normal;
+        }
+      }
+    }
+  }
+}
