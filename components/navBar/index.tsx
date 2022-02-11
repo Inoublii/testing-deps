@@ -13,7 +13,7 @@ const NavBar = () => {
           if (idx === 1) {
             return (
               <>
-                <li key={idx} className={styles.navItem}>
+                <li className={styles.navItem}>
                   <a>{el}</a>
                 </li>
                 <li className={styles.navBarLogo}>
@@ -23,7 +23,7 @@ const NavBar = () => {
             );
           }
           return (
-            <li key={idx} className={styles.navItem}>
+            <li className={styles.navItem}>
               <a>{el}</a>
             </li>
           );
@@ -33,7 +33,7 @@ const NavBar = () => {
         <ul className={styles.navListMobileWrapper}>
           {navBarItems.map((el, idx) => {
             return (
-              <li key={idx} className={styles.navMobileItem}>
+              <li className={styles.navMobileItem}>
                 <a>{el}</a>
               </li>
             );
