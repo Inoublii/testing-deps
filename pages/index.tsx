@@ -4,7 +4,7 @@ import NavBar from "../components/navBar";
 import Section2 from "../components/section2";
 import Hero from "../components/hero";
 import Highlight from "../components/highlight";
-import RoadMap from "../components/roadMapcop";
+import RoadMap from "../components/roadMap";
 import Section3 from "../components/section3";
 import styles from "../styles/Home.module.scss";
 
